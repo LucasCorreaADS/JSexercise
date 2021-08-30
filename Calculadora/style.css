@@ -1,0 +1,19 @@
+body {
+    background: rgb(70, 88, 255);
+}
+
+header {
+    font: 20pt arial;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+
+}
