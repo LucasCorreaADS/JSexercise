@@ -7,7 +7,7 @@ let x2 = 0
 
 function detectorErros(detector){
     if (coefA.value.length == 0 || coefB.value.length == 0 || coefC.value.length == 0) {
-        alert('burro')
+        alert('[ERROR] Valores inválidos')
         return true
     }
 }
@@ -17,7 +17,7 @@ function calcular(event) {
         event.preventDefault()
     }
     bhaskara(coefA, coefB, coefC)
-    res.innerHTML = `o resultado é ${x1} e ${x2} `
+    res.innerHTML = `O resultado é S = {${x1}, ${x2}} `
 }
 
 function bhaskara(a, b, c) {
@@ -30,8 +30,8 @@ function bhaskara(a, b, c) {
     if (delta < 0) {
         res.innerHTML = 'A equação não possui raiz real'
     } else {
-        x1 = (-b + Math.sqrt(delta)) / (2*a)
-        x2 = (-b - Math.sqrt(delta)) / (2*a)
+        x1 = ((-b + Math.sqrt(delta)) / (2*a)).toFixed(4)
+        x2 = ((-b - Math.sqrt(delta)) / (2*a)).toFixed(4)
     }
     
 }

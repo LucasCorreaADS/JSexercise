@@ -8,6 +8,10 @@ header {
     text-align: center;
 }
 
+p#title {
+    font-size: 16pt;
+}
+
 section {
    
     background-color: rgb(255, 255, 255);
